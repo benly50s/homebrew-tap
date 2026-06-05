@@ -5,7 +5,7 @@
 class K10s < Formula
   desc "Benly's Kubernetes Cluster Manager with TUI"
   homepage "https://github.com/benly50s/k10s"
-  version "0.1.20"
+  version "0.1.21"
   license "MIT"
 
   depends_on "k9s"
@@ -14,8 +14,8 @@ class K10s < Formula
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/benly50s/k10s/releases/download/v0.1.20/k10s_Darwin_arm64.tar.gz"
-    sha256 "aa203b8dab93d440743d2bade843bf08e507fd17c1a0af8c027377575533963e"
+    url "https://github.com/benly50s/k10s/releases/download/v0.1.21/k10s_Darwin_arm64.tar.gz"
+    sha256 "3735291c574b8ead859dfe13d123209de8b7d5de703828845a8f785ab19e74f5"
 
     define_method(:install) do
       bin.install "k10s"
