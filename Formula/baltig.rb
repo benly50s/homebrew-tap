@@ -5,13 +5,13 @@
 class Baltig < Formula
   desc "GitLab pipeline TUI"
   homepage "https://github.com/benly50s/baltig"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benly50s/baltig/releases/download/v0.1.1/baltig_darwin_amd64.tar.gz"
-      sha256 "d5cc21ebb7585eddd96dabcb0210fc33b69e3460c5d62dd6e5d88945423ae280"
+      url "https://github.com/benly50s/baltig/releases/download/v0.1.2/baltig_darwin_amd64.tar.gz"
+      sha256 "35ae185f9cfe1359605e0cfc4de8e453a8a9c2973d0d031be2b661d8ba1cd947"
 
       define_method(:install) do
         bin.install "baltig"
@@ -21,8 +21,8 @@ class Baltig < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benly50s/baltig/releases/download/v0.1.1/baltig_darwin_arm64.tar.gz"
-      sha256 "b99ef55168a1cb4e299db7eab961f19a23acdbd21a9e611d26482e85872ee69d"
+      url "https://github.com/benly50s/baltig/releases/download/v0.1.2/baltig_darwin_arm64.tar.gz"
+      sha256 "7627da2a82fafff07e69385f9c32401434d424de227b1ade0f5d42860ac77472"
 
       define_method(:install) do
         bin.install "baltig"
@@ -35,8 +35,8 @@ class Baltig < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benly50s/baltig/releases/download/v0.1.1/baltig_linux_amd64.tar.gz"
-      sha256 "d2b313f3d28fb03a8db812ac87e1024817de608dc089959dd22a8a41c2b0a3ac"
+      url "https://github.com/benly50s/baltig/releases/download/v0.1.2/baltig_linux_amd64.tar.gz"
+      sha256 "020c267fabf1cdb0a289cedce1e4e48de24f8cbcb18f0515d3453ec4c053df12"
       define_method(:install) do
         bin.install "baltig"
         bash_completion.install "completions/baltig.bash" => "baltig"
@@ -45,8 +45,8 @@ class Baltig < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benly50s/baltig/releases/download/v0.1.1/baltig_linux_arm64.tar.gz"
-      sha256 "6a0b8669c1e75ecbb72f1d328502b803046c0347f0d19bbbe581cbdfe11cfc1a"
+      url "https://github.com/benly50s/baltig/releases/download/v0.1.2/baltig_linux_arm64.tar.gz"
+      sha256 "26d9f3794a09c39fbe0d8e6a53bd95073c424895cbb8d68ef4e2e6ecac415467"
       define_method(:install) do
         bin.install "baltig"
         bash_completion.install "completions/baltig.bash" => "baltig"
